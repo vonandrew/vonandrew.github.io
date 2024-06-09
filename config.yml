@@ -1,0 +1,33 @@
+# _config.yml
+
+# 网站的基本配置
+title: Your Website Title  # 这里是您的网站标题，您可以修改为您想要的标题
+description: A short description of your website.  # 网站描述
+logo: /assets/path/to/logo.png  # logo的路径，如果有的话
+baseurl: ""  # 如果你的站点不是部署在根目录下，这里需要设置子目录路径，否则留空
+url: "https://vonandrew.github.io/"  # 你的站点地址
+
+# 主题配置（如果您使用的是支持主题的Jekyll或者其他静态站点生成器）
+theme: jekyll-theme-name
+
+# 插件和其他配置
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Markdown 设置
+markdown: kramdown
+kramdown:
+  input: GFM  # GitHub Flavored Markdown
+  math_engine: mathjax
+  syntax_highlighter: rouge
+# 语言设置，默认为英文
+lang: en
+
+lsi: false
+safe: true
+# source: [your repo's top level directory]
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
