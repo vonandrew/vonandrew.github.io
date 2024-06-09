@@ -1,3 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>你的新页面标题</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夏日炎炎</title>
+    <script>
+        // 复制文本到剪贴板的函数
+        function copyToClipboard(text) {
+            var dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+        }
+
+        // 为列表项添加点击事件
+        function initCopyEvents() {
+            var listItems = document.querySelectorAll('#myList li');
+            for (var i = 0; i < listItems.length; i++) {
+                listItems[i].addEventListener('click', function() {
+                    copyToClipboard(this.textContent);
+                    alert('已复制到剪贴板: ' + this.textContent);
+                });
+            }
+        }
+
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            initCopyEvents();
+        });
+    </script>
 </head>
+<body>
+
+    <h1>点击列表项复制文本</h1>
+    <ul id="myList">
+        <li>项目一</li>
+        <li>项目二</li>
+        <li>项目三</li>
+    </ul>
+
+</body>
+</html>
