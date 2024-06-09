@@ -1,9 +1,9 @@
 # _config.yml
 
 # 网站的基本配置
-title: Your Website Title  # 这里是您的网站标题，您可以修改为您想要的标题
+title: 清单  # 这里是您的网站标题，您可以修改为您想要的标题
 description: A short description of your website.  # 网站描述
-logo: /assets/path/to/logo.png  # logo的路径，如果有的话
+# logo: /assets/path/to/logo.png  # logo的路径，如果有的话
 baseurl: ""  # 如果你的站点不是部署在根目录下，这里需要设置子目录路径，否则留空
 url: "https://vonandrew.github.io/"  # 你的站点地址
 
